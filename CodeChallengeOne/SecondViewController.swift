@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UIWebViewDelegate {
 
     //IBOutlets
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var webViewActivity: UIActivityIndicatorView!
 
     //Variables
     var answer:String!
@@ -24,6 +25,17 @@ class SecondViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+
+    func webViewDidStartLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        self.webViewActivity.startAnimating()
+    }
+
+    func webViewDidFinishLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        self.webViewActivity.stopAnimating()
+        self.webViewActivity.hidesWhenStopped = true
     }
 
     func loadURL(urlString: NSString) {

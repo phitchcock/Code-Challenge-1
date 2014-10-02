@@ -77,12 +77,17 @@
                                     <outlet property="delegate" destination="Xfg-2u-USu" id="7Ze-ZQ-OuW"/>
                                 </connections>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="YNa-Hr-c5A">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="F4x-OB-UMC"/>
                     <connections>
                         <outlet property="webView" destination="TQ1-Cm-8gf" id="WbT-cn-ei4"/>
+                        <outlet property="webViewActivity" destination="YNa-Hr-c5A" id="mia-d3-Uzr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pQ-Rb-k9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
