@@ -12,9 +12,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value One" minimumFontSize="17" clearButtonMode="whileEditing" id="YG5-zI-2pM">
-                                <rect key="frame" x="16" y="111" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Value One" minimumFontSize="17" clearButtonMode="whileEditing" id="YG5-zI-2pM">
+                                <rect key="frame" x="16" y="114" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.59607843140000005" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.50980392159999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
@@ -22,30 +24,34 @@
                                 <rect key="frame" x="155" y="114" width="11" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.59607843140000005" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8tm-AS-iak">
-                                <rect key="frame" x="128" y="170" width="65" height="30"/>
+                                <rect key="frame" x="128" y="174" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.50980392159999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4dM-cd-qrk"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value Two" minimumFontSize="17" clearButtonMode="whileEditing" id="GOb-Be-Iqi">
-                                <rect key="frame" x="207" y="111" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Value Two" minimumFontSize="17" clearButtonMode="whileEditing" id="GOb-Be-Iqi">
+                                <rect key="frame" x="224" y="114" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.59607843140000005" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.50980392159999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.24313725489999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Answer" id="saU-M4-RV6">
                         <barButtonItem key="rightBarButtonItem" title="Web" id="yo3-CS-C1M">
+                            <color key="tintColor" red="0.50980392159999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Xfg-2u-USu" kind="push" id="m8u-yn-ofb"/>
                             </connections>
@@ -59,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="379"/>
+            <point key="canvasLocation" x="681.60000000000002" y="378.66666666666669"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="u2F-FZ-Xsn">
@@ -70,15 +76,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="TQ1-Cm-8gf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="61" width="320" height="507"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="Xfg-2u-USu" id="7Ze-ZQ-OuW"/>
                                 </connections>
                             </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="YNa-Hr-c5A">
-                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <rect key="frame" x="145" y="274" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
@@ -92,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pQ-Rb-k9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1091" y="379"/>
+            <point key="canvasLocation" x="1090" y="378"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A9Z-1G-s5l">
