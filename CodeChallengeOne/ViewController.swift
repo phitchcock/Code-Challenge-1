@@ -10,6 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //IBOutlets
+    @IBOutlet weak var valueOneTextField: UITextField!
+    @IBOutlet weak var valueTwoTextField: UITextField!
+
+    //IBActions
+    @IBAction func calculateButtonPressed(sender: AnyObject) {
+
+        var getValueOne:Int! = valueOneTextField.text.toInt()
+        var getValueTwo:Int! = valueTwoTextField.text.toInt()
+        var total = getValueOne * getValueTwo
+        self.navigationItem.title = "\(total)"
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
