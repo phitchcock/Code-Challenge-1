@@ -45,7 +45,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Answer" id="saU-M4-RV6">
-                        <barButtonItem key="rightBarButtonItem" title="Web" id="yo3-CS-C1M"/>
+                        <barButtonItem key="rightBarButtonItem" title="Web" id="yo3-CS-C1M">
+                            <connections>
+                                <segue destination="Xfg-2u-USu" kind="push" id="m8u-yn-ofb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="valueOneTextField" destination="YG5-zI-2pM" id="Jna-7f-qP2"/>
@@ -56,6 +60,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682" y="379"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="u2F-FZ-Xsn">
+            <objects>
+                <viewController id="Xfg-2u-USu" customClass="SecondViewController" customModule="CodeChallengeOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AEM-he-nCp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="TQ1-Cm-8gf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Xfg-2u-USu" id="7Ze-ZQ-OuW"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F4x-OB-UMC"/>
+                    <connections>
+                        <outlet property="webView" destination="TQ1-Cm-8gf" id="WbT-cn-ei4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pQ-Rb-k9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A9Z-1G-s5l">
