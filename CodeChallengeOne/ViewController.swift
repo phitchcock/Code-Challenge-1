@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         if (total % 5 == 0) {
             self.webButton.enabled = false
-            self.webButton.title = ""
+            self.webButton.title = "Multiple of 5!"
         }
     }
 
