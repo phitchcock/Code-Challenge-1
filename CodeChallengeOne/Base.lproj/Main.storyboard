@@ -50,6 +50,7 @@
                     <connections>
                         <outlet property="valueOneTextField" destination="YG5-zI-2pM" id="Jna-7f-qP2"/>
                         <outlet property="valueTwoTextField" destination="GOb-Be-Iqi" id="k8A-VV-KNQ"/>
+                        <outlet property="webButton" destination="yo3-CS-C1M" id="QjN-nR-E9g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //IBOutlets
     @IBOutlet weak var valueOneTextField: UITextField!
     @IBOutlet weak var valueTwoTextField: UITextField!
+    @IBOutlet weak var webButton: UIBarButtonItem!
 
     //IBActions
     @IBAction func calculateButtonPressed(sender: AnyObject) {
@@ -21,7 +22,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var getValueTwo:Int! = valueTwoTextField.text.toInt()
         var total = getValueOne * getValueTwo
         self.navigationItem.title = "\(total)"
-        valueTwoTextField.resignFirstResponder()
+        self.valueTwoTextField.resignFirstResponder()
+
+        if (total % 5 == 0) {
+            self.webButton.enabled = false
+            self.webButton.title = ""
+        }
     }
 
 
