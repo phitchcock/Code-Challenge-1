@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     //IBOutlets
     @IBOutlet weak var valueOneTextField: UITextField!
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         var getValueTwo:Int! = valueTwoTextField.text.toInt()
         var total = getValueOne * getValueTwo
         self.navigationItem.title = "\(total)"
+        valueTwoTextField.resignFirstResponder()
     }
 
 
@@ -32,6 +33,10 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
 
 
